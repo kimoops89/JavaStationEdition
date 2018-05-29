@@ -14,13 +14,13 @@ public class Howmuch{
 		int num4 = scan.nextInt();
 		System.out.println(num4 + "퍼센트요");
 		String result = "";
-		int num5 = num3 * num4%
-		if(num4=<10){
-			result = num5 + "원 입니다";
-		} else if(0<num4 && num4>10){
-			result = "안 팔아요";
+		int num5 = num3-(num3*num4/100);
+		if(num4>=10){
+			result = "안 팔아요"; 
+		} else{
+			result = num5 + "원 입니다.";
 		}
-		
+
 		System.out.print(result);
 	}
 }
